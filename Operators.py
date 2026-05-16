@@ -1,0 +1,17 @@
+num1=45
+num2=3
+print(num1)
+print(num2)
+print("Sum is equal to", num1 + num2)
+print("Minus is equal to", num1 - num2)
+print("Multiplication is equal to", num1 * num2)
+print("Division is equal to", num1 / num2)
+print("Floor Division is equal to", num1 // num2)
+print("Modulo is equal to", num1 % num2)
+print("Exponieation is equal to", num1 ** num2)
+print("Equal?", num1 == num2)
+print("Not Equal?", num1 != num2)
+print("Less than?", num1 < num2)
+print("Greater than?", num1 > num2)
+print("Less than or equal to?", num1 <= num2)
+print("Greater than or equal to?", num1 >= num2)
