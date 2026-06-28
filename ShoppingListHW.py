@@ -1,0 +1,18 @@
+file = open("shoppingList.txt", "w")
+file.write("Shopping List\n")
+file.write("1. Milk\n")
+file.write("2. Bread\n")
+file.write("3. Bananas\n")
+file.write("4. Apples\n")
+file.close()
+file = open("shoppingList.txt", "r")
+content = file.read()
+print(content)
+file.close
+file = open("shoppingList.txt", "a")
+file.write("5. Oranges")
+file.write("\n6. Strawberries")
+file.close
+file = open("shoppingList.txt", "r")
+print(content)
+file.close()
