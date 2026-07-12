@@ -1,0 +1,26 @@
+from tkinter import *
+window = Tk()
+window.title("My Profile Card")
+window.geometry("400x300")
+title = Label(window, text="My Profile Card", bg="purple", fg="white", width=40)
+title.grid(row=0, column=0, columnspan=2, padx=10, pady=5)
+nameLabel= Label(window, text="Name", bg="white", fg="black")
+nameLabel.grid(row=1, column=0, padx=10, pady=5)
+nameEntry= Entry(window, fg="blue", bg="light yellow", width=25)
+nameEntry.grid(row=1, column=1, padx=10, pady=5)
+
+hobbyLabel= Label(window, text="Hobby", bg="white", fg="black")
+hobbyLabel.grid(row=2, column=0, padx=10, pady=5)
+hobbyEntry= Entry(window, fg="blue", bg="light yellow", width=25)
+hobbyEntry.grid(row=2, column=1, padx=10, pady=5)
+
+aboutFrame= Frame(window, relief=RAISED, borderwidth=3)
+aboutFrame.grid(row=3, column=0, columnspan=2, padx=10, pady=5)
+aboutLabel = Label(aboutFrame, text="About Me")
+aboutLabel.pack()
+aboutText = Text(aboutFrame, bg="light yellow", fg="green", width=40, height=4)
+aboutText.pack()
+
+button1 = Button(window, text="Show my card", bg="purple", fg="white", width=20)
+button1.grid(row=4, column=0, columnspan=2, padx=10, pady=10)
+window.mainloop()
