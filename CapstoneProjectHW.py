@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-df = pd.read_csv("IMDB Dataset.csv")
+df=sns.load_dataset("IMDB")
 print(df.head(10))
 print(df.shape)
 print(df.tail())
@@ -20,10 +20,6 @@ df.select_dtypes(include=[np.number]).hist(figsize=(12, 8))
 plt.show()
 df.select_dtypes(include=[np.number]).plot(kind="box", subplots=True, layout=(2, 2), sharex=False, sharey=False, figsize=(8, 8))
 plt.show()
-print(df.Certificate.value_counts())
-print(df.Genre.value_counts())
-print(df.Director.value_counts())
-
 sns.countplot(data=df, x="Certificate")
 plt.show()
 sns.countplot(data=df, x="Genre")
